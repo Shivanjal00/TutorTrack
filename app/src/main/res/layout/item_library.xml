@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/library_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/library_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/library_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance: 5 km"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/library_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $20"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
